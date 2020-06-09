@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Soma\Console;
+use Soma\Application;
+
+$app = Application::getInstance();
+$app->init(__DIR__.'/public');
+
+$app->getConsole()->run();

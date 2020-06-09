@@ -1,0 +1,9 @@
+main:
+  - page: /index.md
+    label: Blog
+  - page: /contact.md
+    label: Contact
+  - page: /about.md
+    label: About me
+  - page: /search.md
+    label: Search

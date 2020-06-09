@@ -1,0 +1,26 @@
+{
+    "name": "soma/papyrus-project",
+    "type": "project",
+    "license": "MIT",
+    "description": "Papyrus is a developer-oriented flat-file markdown CMS.",
+    "homepage": "https://github.com/soma-php/papyrus-project",
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "lib/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "composer/installers": "~1.6",
+        "oomphinc/composer-installers-extender": "^1.1",
+        
+        "soma/papyrus": "^1.0",
+        "soma/papyrus-theme": "^0.0.3"
+    },
+    "extra": {
+        "installer-types": ["papyrus-theme"],
+        "installer-paths": {
+            "themes/{$name}/": ["type:papyrus-theme"]
+        }
+    }
+}

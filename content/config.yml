@@ -1,0 +1,28 @@
+language: en-US
+title: My Website
+author: John Doe
+description: The personal website of John Doe
+date-format: "F j, Y"
+drafts: true
+404: /404.md
+pagination: 10
+heading-offset: 0
+tag-route: '/tag?t='
+feed:
+  include: /blog/
+filters:
+  anchors: \Papyrus\Content\Filters\AnchorFilter
+  images: \Papyrus\Content\Filters\ImageFilter
+  hashtags: \Papyrus\Content\Filters\HashtagFilter
+  heading-id: \Papyrus\Content\Filters\HeadingIdFilter
+  heading-offset: \Papyrus\Content\Filters\HeadingOffsetFilter
+  shortcodes: \Papyrus\Content\Filters\ShortcodeFilter
+  includes: \Papyrus\Content\Filters\ContentIncludesFilter
+  smartypants: \Papyrus\Content\Filters\SmartyPantsFilter
+search:
+  low_value: ['is', 'a', 'the', 'in', 'he', 'she', 'it', 'its', 'and']
+  exclude:
+    - index.md
+    - tags.md
+    - search.md
+    - 404.md
